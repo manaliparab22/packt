@@ -1,0 +1,60 @@
+	############################################################################
+	Project Title
+	PACKT - Verification of UI Elements 
+	############################################################################
+	
+	a.Automation software and reporting 
+	Packt is web application. I have chosen Selenium for Automation purpose and Java as
+	the language with Cucumber. It uses Gherkin langauge which is easy to understand for 
+	all the stakeholders.
+	For execution part, JUnit is used and Extent Reports for generating reports.
+	
+	############################################################################
+	b.Installation & Execution Steps
+	
+	1.Download Zip file and Unzip it to your Workspace directory
+	2.Install Java and Eclipse[prefer latest one] 
+	3.Open Eclipse > File > Import projects existing Workspace directory
+	4.Expand and Open > com.packt.stepdefinitions.TestRunnerPackt.java file 
+	5.Run as > Junit Test 
+	6.After execution Report will be generated - under Packt/reports/PacktExtentReportResults.html
+	
+	############################################################################
+	c.Other information
+	
+	Folder Structure >
+	1.Testdata is under src/main/resources/TestDataFiles/PacktTestdata.xls
+	
+	There are four scenarios and each scenario uses sheet.
+	User can change this file according to different testdata as when required
+	
+	Scenario 1 Sheet - includes ElementName,Locators(with locator type as CSS),CSS Value,Color and Text 
+	It takes these values as expected values and compare with actual values
+	For this scenario,I have passed locator address but we can achive this using Page Object Model as enhancements 
+	
+	Scenario 2 Sheet - includes Menu Name > SubMenu Name > Menu Item 
+	It helps to navigate using top navigation bar
+	[for eg Browse > Web Development >Flask ]
+	
+	Scenario 3 Sheet - includes Element No Sequence	and Carosuel Element Name
+	It helps to click on carosuel element according to sequence given in sheet
+	
+	Scenario 4 Sheet - includes Search Criteria	and Search Criteria	Values
+	It helps to apply filters while Searching product using values
+	
+	
+	2.Config files is under src/main/resources/Configs/Configs.properties file
+	
+	It contains URL, Browser , Testdata file name, Username and password details
+	User can change this file according to different configurations
+	
+	3.Feature file is under resources/Features/Packt_UI_Functionalities.feature file
+	
+	It contains four scenarios written in Gherkin.
+	
+	4.Extend Reports will get generated under - Packt/PacktExtentReportResults.html
+	
+	It will shows Pass/Fail Testcase with Total Steps, Time taken
+	
+	
+	
